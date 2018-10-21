@@ -1,0 +1,18 @@
+spring: 
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://172.26.203.136/sell?characterEncoding=utf-8&useSSL=false
+    username: root
+    password: 123456
+  jpa:
+    database: mysql
+    hibernate:
+      ddl-auto: update
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java 
+      exclude: WEB_INF/**
+server:
+  servlet:
+    context-path: /sell
